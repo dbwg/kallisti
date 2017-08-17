@@ -1,0 +1,9 @@
+
+(jbuild_version 1)
+
+(library (
+  (name kallisti)
+  (public_name kallisti)
+  (libraries (core lwt yojson
+  			  cohttp cohttp.lwt tls))
+  (preprocess (pps (lwt.ppx)))))

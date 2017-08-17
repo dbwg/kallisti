@@ -1,0 +1,17 @@
+opam-version: "2.0"
+name: "kallisti"
+version: "1.0.0"
+maintainer: "Erin <erin@hashbang.sh>"
+authors: ["Erin <erin@hashbang.sh>"]
+homepage: "https://dbwg.github.io/kallisti"
+bug-reports: "https://github.com/dbwg/kallisti/issues"
+dev-repo: "https://github.com/dbwg/kallisti"
+license: ["ISC"]
+tags: ["discord" "chat" "api-client"]
+build: [["jbuilder" "build" "-p" name "-j" jobs]]
+build-test: [["jbuilder" "runtest" "-p" name "-j" jobs]]
+depends: [
+  "jbuilder" {build}
+  "core"
+  "lwt"
+]
